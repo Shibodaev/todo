@@ -1,0 +1,17 @@
+// var input = document.createElement('input',[]);
+//     .appendChild(input);
+var parentElement = document.body;
+document.createTextNode(text);
+var text = 'Hello MIke';
+var ol = document.createElement('ol');
+var childLi = document.createElement('li');
+var p = document.createElement('p');
+var div = document.createElement('div');
+    parentElement.appendChild(ol);
+    ol.appendChild(childLi);
+    childLi.innerHTML = text;
+    childLi.className = 'item';
+    document.body.insertBefore(p, document.body.firstChild);
+    p.innerHTML = text.toUpperCase();
+    let childLi2 = childLi.cloneNode(true);
+     childLi.parentNode.insertBefore(childLi2, childLi.nextSibling);
