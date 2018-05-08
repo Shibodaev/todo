@@ -27,24 +27,45 @@ function add() {
 		ol.appendChild(li);
 		li.innerHTML = '<input type="checkbox">' + '<span class="mission">' + idInput + '</span>';
 		var checkBox = document.querySelector('[type="checkbox"]');
-		var mission = document.querySelector('.mission');
-		checkBox.addEventListener('click', checket);
-		function checket() {
-			if (checkBox) {
-				return mission.classList.add("mission-none");
-			} else {
-				return mission.classList.remove("mission-none");
-			}
-		}
-	}
-}
-function check() {
-	if (checkbox == true) {
 
-	} else {
-		console.log(false);
+		checkBox.onclick = function () {
+			arrOl.forEach(function () {
+				return this.nextSibling.classList.add("mission-none");
+			});
+			// if(checkBox) {
+			// 	arrOl[i] = this.value;
+			// 	console.log(arrOl);
+			// 	// i++;
+			// 	// event.currentTarget.nextSibling.classList.add("mission-none");
+			// }
+		};
+		// // mission.classList.remove("mission-none");
+		// if () {
+		//
+		//
+		// } else {
+		// 	return mission.classList.remove("mission-none");
+		// }
+		// checkBox.addEventListener('click', checket);
+		// function checket() {
+		// 	if (checkBox.checked) {
+		// 		for(var i = 0; i < ol.children.length; i++) {
+		// 			mission.classList.add("mission-none");
+		// 		}
+		//
+		// 	} else {
+		// 		return mission.classList.remove("mission-none");
+		// 	}
+		// }
 	}
 }
+// function check() {
+// 	if (checkbox == true) {
+//
+// 	} else {
+// 		console.log(false);
+// 	}
+// }
 
 
 function del() {
