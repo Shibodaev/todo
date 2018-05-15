@@ -1,28 +1,48 @@
-var arr = [];
-window.onload = function () {
-	document.getElementById('button').onclick = function () {
-		var input = document.getElementById('input').value;
-		var obj = {};
-		obj.todo = input;
-		obj.check = false;
-		var i = arr.length;
-		arr[i] = obj;
-		console.log(obj);
-		out();
-	};
-	function out() {
-		var out = "";
-		for(var key in arr){
-			if( arr[key].check == true ){
-				out += '<input type="checkbox" checked>'
-			} else {
-				out += '<input type="checkbox">'
-			}
-			out += arr[key].todo + "<br>";
-			document.getElementById('out').innerHTML = out;
-		}
-	}
-};
+
+
+
+
+
+
+// var arr = [];
+// window.onload = function () {
+// 	if(localStorage.getItem('todo') != undefined ) {
+// 		arr = JSON.parse(localStorage.getItem('todo'));
+// 		out();
+// 	}
+// 	document.getElementById('button').onclick = function () {
+// 		var input = document.getElementById('input').value;
+// 		if (input === "") {
+// 			alert('введите значение в поле!!');
+// 		} else {
+// 			if(localStorage.getItem('todo') != undefined ) {
+// 				arr = JSON.parse(localStorage.getItem('todo'));
+// 				out();
+// 			}
+// 			var obj = {};
+// 			obj.todo = input;
+// 			obj.check = false;
+// 			var i = arr.length;
+// 			arr[i] = obj;
+// 			console.log(obj);
+// 			out();
+// 			localStorage.setItem('todo', JSON.stringify(arr));
+// 		}
+// 	};
+//
+// 	function out() {
+// 		var out = "";
+// 		for (var key in arr) {
+// 			if (arr[key].check == true) {
+// 				out += '<input type="checkbox" checked>'
+// 			} else {
+// 				out += '<input type="checkbox">'
+// 			}
+// 			out += arr[key].todo + "<br>";
+// 			document.getElementById('out').innerHTML = out;
+// 		}
+// 	}
+// };
 // window.onload = function () {
 // 	document.getElementById('button').onclick = function () {
 // 		var add = document.getElementById('input').value;
@@ -42,12 +62,11 @@ window.onload = function () {
 // 		}
 //
 
-		// if(arr[i].  ){
-		//
-		// }
+// if(arr[i].  ){
+//
+// }
 // 	}
 // };
-
 
 
 // var parentElement = document.body,
