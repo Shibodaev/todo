@@ -1,4 +1,52 @@
+var arr = [];
+window.onload = function () {
+	document.getElementById('button').onclick = function () {
+		var input = document.getElementById('input').value;
+		var obj = {};
+		obj.todo = input;
+		obj.check = false;
+		var i = arr.length;
+		arr[i] = obj;
+		console.log(obj);
+		out();
+	};
+	function out() {
+		var out = "";
+		for(var key in arr){
+			if( arr[key].check == true ){
+				out += '<input type="checkbox" checked>'
+			} else {
+				out += '<input type="checkbox">'
+			}
+			out += arr[key].todo + "<br>";
+			document.getElementById('out').innerHTML = out;
+		}
+	}
+};
+// window.onload = function () {
+// 	document.getElementById('button').onclick = function () {
+// 		var add = document.getElementById('input').value;
+// 		var temp = {};  // создаю ассоцативный массив
+// 		temp.todo = add; //  добавляю дело
+// 		temp.check = false; // чекбокс по старту фолс
+// 		var i = arr.length;
+// 		arr[i] = temp;
+// 		out();
+// 	};
+//
+// 	function out() {
+// 		var out = '';
+// 		for (var key in arr) {
+// 			out += arr[key].todo + '<br>';
+// 			document.getElementById('out').innerHTML = out;
+// 		}
+//
 
+		// if(arr[i].  ){
+		//
+		// }
+// 	}
+// };
 
 
 
