@@ -10,5 +10,4 @@ body {
 .checked {
     color: red;
     text-decoration: line-through;
-    background: red;
 }

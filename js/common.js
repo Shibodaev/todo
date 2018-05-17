@@ -23,38 +23,35 @@ window.onload = function () {
 			localStorage.setItem('todo', JSON.stringify(arr));
 		}
 	};
+	var myStorage;
+
 	function out() {
 		var out = "";
 		for (var key in arr) {
-
 			if (arr[key].check == true) {
 				out += '<input type="checkbox" checked>'
-
 			} else {
 				out += '<input type="checkbox">'
 			}
-
-			out += arr[key].todo + "<br>";
+			out += "<span>" + arr[key].todo + "</span>" + "<br>";
 			document.getElementById('out').innerHTML = out;
 			//URL=https://www.youtube.com/watch?v=GlW0ZnPstpk
 			var  myOut = document.getElementById('out');
 			myOut.addEventListener('click', function(e) {
-				var checkk = document.querySelector('input');
-				if( e.target.tagName == 'input' ) {
-					console.log('Hi');
+				if( e.target.checked ) {
+					e.target.nextSibling.classList.add('checked');
+				} else {
+					e.target.nextSibling.classList.remove('checked');
 				}
 			})
 		}
-
-		// var box = e.target;
-		// box.onclick =  function(e){
-		// 	console.log('hi');
-		// 	if ( box.check == true ) {
-		// 		console.log(true);
-		// 		return e.target.classList.toggle("checked");
-		// 	}
-		// }
-
+		function	storage(){
+			myStorage = out.innerHTML;
+			localStorage.setItem('todo','out')
+		}
+		if(localStorage.getItem('todo')){
+			myOut.innerHTML = localStorage.getItem('todo');
+		}
 	}
 };
 
