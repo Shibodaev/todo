@@ -23,7 +23,6 @@ window.onload = function () {
 			localStorage.setItem('todo', JSON.stringify(arr));
 		}
 	};
-	var myStorage;
 
 	function out() {
 		var out = "";
@@ -35,7 +34,8 @@ window.onload = function () {
 			}
 			out += "<span>" + arr[key].todo + "</span>" + "<br>";
 			document.getElementById('out').innerHTML = out;
-			//URL=https://www.youtube.com/watch?v=GlW0ZnPstpk
+			storage();
+			//проверитоь отработку функции   storage
 			var  myOut = document.getElementById('out');
 			myOut.addEventListener('click', function(e) {
 				if( e.target.checked ) {
@@ -45,17 +45,21 @@ window.onload = function () {
 				}
 			})
 		}
-		function	storage(){
-			myStorage = out.innerHTML;
-			localStorage.setItem('todo','out')
-		}
-		if(localStorage.getItem('todo')){
-			myOut.innerHTML = localStorage.getItem('todo');
-		}
+		/*-----------------------------*/
 	}
+	// фунция сохранения параметров
+	/*-----------------------------*/
+	var myStorage;
+	function	storage(){
+		console.log('ОТладка');
+		myStorage = out.innerHTML;
+		localStorage.setItem('myStorage', myStorage )
+	}
+	if(localStorage.getItem('myStorage')){
+		out.innerHTML = localStorage.getItem('myStorage');
+	}
+	/*-----------------------------*/
 };
-
-
 // var parentElement = document.body,
 // 	input = document.createElement("input"),
 // 	label = document.createElement("label"),
