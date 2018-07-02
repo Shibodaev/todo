@@ -1,0 +1,7 @@
+.canvas {
+    border: 2px black solid;
+    margin: 40px auto;
+    display: block;
+    position: relative;
+    background: url(img/setka.png) no-repeat center top;
+}
