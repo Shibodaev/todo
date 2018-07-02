@@ -1,0 +1,43 @@
+/*body {*/
+    /*font-family: Helvetica, Arial, sans-serif;*/
+    /*font-size: 12px;*/
+/*}*/
+/*iframe {*/
+    /*margin-top: 200px;*/
+    /*width: 100%;*/
+    /*height: 400px;*/
+/*}*/
+/*iframe > img  {*/
+    /*max-width: 100%;*/
+    /*height: auto;*/
+/*}*/
+/*.delete {*/
+    /*text-decoration: line-through;*/
+/*}*/
+/*.btn-default_margin-right {*/
+    /*margin-right: 10px;*/
+/*}*/
+/*.mission-none {*/
+    /*color: red;*/
+    /*text-decoration:line-through;*/
+/*}*/
+/*img {*/
+    /*width: 200px;*/
+/*}*/
+/*h1 {*/
+    /*font-size: 1.5em;*/
+/*}*/
+
+/*h2 {*/
+    /*font-size: 1.2em;*/
+/*}*/
+header {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#28751d+0,7fba22+100 */
+    background: rgb(40,117,29); /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(40,117,29,1) 0%, rgba(127,186,34,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(40,117,29,1) 0%,rgba(127,186,34,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(40,117,29,1) 0%,rgba(127,186,34,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#28751d', endColorstr='#7fba22',GradientType=1 ); /* IE6-9 */
+    width: 100%;
+    height: 100px;
+}
