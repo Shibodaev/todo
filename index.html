@@ -1,59 +1,20 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
 <div class="container">
-    <!--<iframe src="iframe.html"  frameborder="0" seamless="seamless"></iframe>-->
-    <input type="text" id="input" name="name">
-    <button id="button">"Получить значение"</button>
-    <div class="row flex-column">
-        <h2>Заголовок</h2>
-        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio et illo in molestiae placeat possimus
-            rerum
-            tempora vel. Aspernatur beatae blanditiis consequatur doloribus exercitationem minus modi neque vel
-            veritatis
-            voluptates!</p>
-        <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-        </ul>
-        <p><span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias magni modi praesentium quisquam repellendus reprehenderit. Aut consequatur cupiditate eum impedit iusto maiores, modi, molestiae odit officia provident quasi, repellat sint!</span>
-        </p>
-        <img src="http://magicwall.ru/wallpapers/red-cats-07_jillhudgins_nc.jpg" alt="Кот">
-        <p><span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae consequuntur cum distinctio doloremque dolores earum in maiores minus, officia perferendis placeat porro praesentium provident quo, recusandae rerum sunt velit, voluptates.</span>
-        </p>
-        <img src="http://magicwall.ru/wallpapers/red-cats-07_jillhudgins_nc.jpg" alt="Кот">
-        <p><span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae consequuntur cum distinctio doloremque dolores earum in maiores minus, officia perferendis placeat porro praesentium provident quo, recusandae rerum sunt velit, voluptates.</span>
-        </p>
-        <img src="http://magicwall.ru/wallpapers/red-cats-07_jillhudgins_nc.jpg" alt="Кот">
-    </div>
-    <!---->
-    <br>
-    <div class="row">
-        <p id="oneEnter"></p>
-        <p id="twoEnter"></p>
-        <p id="sumEnter"></p>
-    </div>
-    <div class="row parent-button">
-        <button class="btn btn-default btn-default_margin-right" id="oneButton">Первая</button>
-        <button class="btn btn-default" id="twoButton">Вторая</button>
-    </div>
-    <!---->
+    <div class="row" id="out">
+        <form action="">
+            <input type="text" name="text" id="enter">
+            <button class="btn btn-primary" type="button">Добавить задание</button>
+        </form>
+        </div>
 </div>
-
-
-<!--<input type="text" name="todo" id="input">-->
-<!--<input type="submit" id="button" value="Добавить">-->
-<!--<hr>-->
-<!--<div id="out"></div>-->
-
-
 <script src="bower_components/jquery/dist/jquery.js" defer></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.bundle.js" defer></script>
 <script src="js/common.js"></script>
