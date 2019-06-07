@@ -3,17 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 <div class="container">
     <div class="row flex-column" id="out">
+       <div class="todo">
         <form action="">
             <input type="text" name="text" id="enter" title="Добавить дело">
-            <button class="btn btn-primary"  id="button" type="button" disabled="disabled">Добавить задание</button>
+            <button class="btn btn-success"  id="button" type="button" disabled="disabled">Добавить задание</button>
         </form>
-        <ol class='list' id="list"></ol>
+        <ol id="list"></ol>
+        </div>
+        
     </div>
 </div>
 <script src="bower_components/jquery/dist/jquery.js" defer></script>

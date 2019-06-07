@@ -1,19 +1,63 @@
 body {
   font-size: 14px;
+  background-color: #000;
+  color: #fff;
+  position: relative;
 }
-ol {
-  padding: 0 20px;
+.todo {
+  padding-top: 20px;
+  position: absolute;
+  width: 350px;
+  top: 0;
+  right: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+#list{
+  width: 300px;
+  padding: 10px 20px;
   box-sizing: border-box;
+  color: #fff;
+  list-style-type: armenian!important;
 }
-.list li {
-  margin: .5em 0;
+input[type="text"]{
+  color: #000;
+  height: 30px;
+  font-size: 16px;
+  margin-right: 5px;
+}
+form {
   display: flex;
-
   align-items: center;
 }
-.list li:first-child {
- flex: 2 1 0;
+#list  li {
+  padding: 5px;
+  margin: 0;
+  align-items: center;
+  display: flex;
 }
-.close {
+#list li:nth-child(odd){
+  background: green;
+}
+#list li:nth-child(even) {
+  background: blue;
+}
+#list li .text {
+  flex: 4 1 0;
+}
+#list li .close {
   margin-left: 10px;
+  color: white;
+  opacity: .5;
+  color: red;
+  text-align: right;
+}
+#list li:hover .close {
+  opacity: 1;
+}
+#list li .time {
+  flex: 1;
+  
+ 
 }
