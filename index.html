@@ -1,25 +1,31 @@
 <!doctype html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-<div class="container">
-    <div class="row flex-column" id="out">
-       <div class="todo">
-        <form action="" method="POST">
-            <input type="text" name="text" id="enter" title="Добавить дело">
-            <button class="btn btn-success"  id="button" type="button" disabled="disabled">Добавить задание</button>
-        </form>
-        <ol id="list"></ol>
-	</div>
+    <div class="container">
+        <div class="row flex-column" id="out">
+            <div class="todo">
+                <form action="" method="POST">
+                    
+                    <input type="text" name="text" id="enter" title="Добавить дело">
+                    <button class="btn btn-success" id="button" type="button" disabled="disabled">Добавить
+                        задание</button>
+                </form>
+                <ol id="list"></ol>
+            </div>
+            <button class="btn btn-save">Save</button>
+            <button class="btn btn-delete">Delete</button>
+        </div>
     </div>
-</div>
-<script type="module" import Todo from './js/todo.js'></script>
-<script src="js/common.js"></script>
+    <script src="./js/common.js"></script>
 
 </body>
+
 </html>
